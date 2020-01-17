@@ -18,13 +18,16 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
+function first(arr) {
+  return arr[0]
+}
 
 
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
-var arr = [40,50,60];
+var arr = [40,50,60]; 
+
 // Do not edit the code above.
 
 /*
@@ -33,8 +36,10 @@ var arr = [40,50,60];
 */
 
 //Code Here
+function last(arr) {
+  return arr[arr.length - 1] 
 
-
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -48,8 +53,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
+function looper(family){
+  for (let i = 0; i<family.length; i++) // Didn't work: for (let i = 0; i < 4; i++) //also, "i++" could be "i+=1"
+  window.alert(family[i]) 
+} 
 
-
+looper(family)
 
 ////////// PROBLEM 4 //////////
 
@@ -63,7 +72,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+function reversedLooper(letters) {
+  for (let i=arr.length -1; i > -1; i--) {
+    alert(letters[i]) //alert is a function
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -79,9 +92,17 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
+function evenFinder(nums) {
+  let evens = []
+  for (let i = 0; i < nums.length; i++){
+    if (nums[i] % 2 === 0) {
+      evens.push(nums[i]);
+    } //% is modulus. Returns the remainder
+  }
+return evens;
+}
 
-
-
+//REVISIT
 
 
 
@@ -131,12 +152,13 @@ var getRandomArbitrary = function() {
 //Code Here
 
 
-
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 // Do not edit the code above.
+
+myGroceryList.push()
 
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list and adding new items to our list.
@@ -158,7 +180,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function removeItem(myGroceryList, itemToRemove) {
+  
+}
 
 
 ////////// PROBLEM 9 //////////
